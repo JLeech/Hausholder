@@ -39,7 +39,6 @@ def create_unary_vec(number)
 	return vec
 end
 
-
 def hause_matrix(vec,position)
 	hause_vec = count_vector(vec,position)
 	sub_matrix = Matrix.identity(hause_vec.size)
@@ -93,9 +92,10 @@ def make_hessen(matr)
 	print_matrix(matr)
 end
 
-matr = Matrix[[3,4,5,6],[1,2,3,4],[5,6,7,4],[1,3,9,5]]
+#matr = Matrix[[3,4,5,6],[1,2,3,4],[5,6,7,4],[1,3,9,5]]
 
-hause_matrix,triangle = make_triangle(matr)
+#hause_matrix,triangle = make_triangle(matr)
 #print_matrix (hause_matrix * triangle)
+
 matr = Matrix[[3,4,5,6],[1,2,3,4],[5,6,7,4],[1,3,9,5]]
 make_hessen(matr)
